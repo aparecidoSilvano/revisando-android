@@ -1,7 +1,9 @@
 package com.example.silva.praticando_layouts;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
                     button.setBackground(getDrawable(R.mipmap.ic_expand_more_black_24dp));
                 }
 
+            }
+        });
+
+        FloatingActionButton goToForm = findViewById(R.id.tb_form);
+
+        goToForm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(intent);
             }
         });
     }
