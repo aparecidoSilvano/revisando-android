@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name="activity.Main2Activity"
             android:label="@string/title_activity_main2"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.silva.praticando_layouts.MainActivity" />
+                android:value="com.example.silva.praticando_layouts.activity.MainActivity" />
         </activity>
+        <activity android:name="activity.chartExamples.ChartActivity" />
+        <activity android:name="activity.chartExamples.ListChartsActivity"></activity>
     </application>
 
 </manifest>
